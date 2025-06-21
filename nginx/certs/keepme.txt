@@ -1,5 +1,0 @@
-To install ssl certificate in locally 
-follow this github repository - https://github.com/FiloSottile/mkcert
-
-
-To https (ssl enabled) visit - https://host.docker.internal/
