@@ -142,7 +142,7 @@ To enable HTTPS locally:
    ssl_certificate /etc/nginx/certs/localhost.pem;
    ssl_certificate_key /etc/nginx/certs/localhost-key.pem;
    ```
-3. Access via `https://localhost`
+3. Access via `https://host.docker.internal`
 
 ---
 
