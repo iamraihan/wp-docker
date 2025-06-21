@@ -21,8 +21,8 @@ This setup runs a local WordPress development environment using:
 │   ├── start.sh
 │   ├── default.conf
 │   └── certs/
-│       ├── localhost.pem
-│       └── localhost-key.pem
+│       ├── host.docker.internal.pem
+│       └── host.docker.internal-key.pem
 ├── src/                  # Optional: wp-content mount
 ```
 
@@ -70,10 +70,11 @@ docker-compose up -d
 
 ## 🌐 Access URLs
 
-| Service    | URL                   |
-| ---------- | --------------------- |
-| WordPress  | http://localhost      |
-| phpMyAdmin | http://localhost:8081 |
+| Service    | URL                          |
+| ---------- | ---------------------------- |
+| WordPress  | http://localhost             |
+| WordPress  | https://host.docker.internal |
+| phpMyAdmin | http://localhost:8081        |
 
 ---
 
@@ -144,14 +145,11 @@ To enable HTTPS locally:
    ```
 3. Access via `https://host.docker.internal`
 
+For more details about SSL installation:  
+👉 [https://github.com/iamraihan/wp-docker/tree/main/nginx/certs](https://github.com/iamraihan/wp-docker/tree/main/nginx/certs)
+
 ---
 
 ## ✅ License
 
 MIT – free for personal or commercial use.
-
----
-
-## 🙋‍♂️ Need Help?
-
-Open an issue or reach out for support. Happy coding!
