@@ -12,7 +12,7 @@ services:
       HOSTNAME: ${HOSTNAME}
     ports:
       - "80:80"
-      # - "443:443" # Optional: Only needed if you're using real SSL
+      - "443:443" # Optional: Only needed if you're using real SSL
     volumes:
       - wordpress:/var/www/html
     depends_on:

@@ -1,3 +1,5 @@
 .env
 .idea/
 wp-content
+/nginx/certs/*
+!/nginx/certs/keepme.txt
