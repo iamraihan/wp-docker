@@ -33,8 +33,8 @@ This setup runs a local WordPress development environment using:
 ### ✅ Step 1: Clone & Navigate
 
 ```bash
-git clone <repo-url>
-cd <project-directory>
+git clone https://github.com/iamraihan/wp-docker.git
+cd wp-docker
 ```
 
 ### ✅ Step 2: Create a `.env` file
