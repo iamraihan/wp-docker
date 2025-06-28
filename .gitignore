@@ -1,9 +1,4 @@
 .env
 .idea/
-wp-content/
-
-# Ignore everything in nginx/certs/
-nginx/certs/*
-
-# But don't ignore README.md in that folder
-!nginx/certs/README.md
+*.pem
+wp-content/*
