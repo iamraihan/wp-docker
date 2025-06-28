@@ -21,7 +21,7 @@ services:
       - internal
 
   wordpress:
-    image: wordpress:6.5.2-fpm-alpine
+    image: wordpress:6.8.1-fpm-alpine
     container_name: ${CONTAINER_NAME}-wordpress
     restart: unless-stopped
     env_file: .env
