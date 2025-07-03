@@ -1,0 +1,14 @@
+# Dockerfile.node
+
+ARG PLUGIN_NAME=wp-project-manager
+FROM node:12.1.0-alpine
+
+WORKDIR /app/wp-content/plugins/${PLUGIN_NAME}
+
+COPY wp-content/plugins/${PLUGIN_NAME}/package*.json ./
+
+RUN npm install
+
+COPY wp-content/plugins/${PLUGIN_NAME} .
+
+CMD ["npm", "run", "start"]

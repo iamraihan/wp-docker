@@ -1,0 +1,38 @@
+# Node modules and dependencies (we install fresh inside container)
+node_modules
+npm-debug.log
+yarn-error.log
+
+# PHP vendor and Composer cache (if any)
+vendor
+composer.lock
+
+# Git files and folders
+.git
+.gitignore
+
+# Docker files and configs
+Dockerfile*
+docker-compose.yml
+
+# Logs and temp files
+*.log
+*.cache
+*.tmp
+*.swp
+*.DS_Store
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# WordPress cache or backup folders (if any)
+wp-content/cache/
+wp-content/backups/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
